@@ -1,0 +1,45 @@
+//Estilos Generales
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'primary_font';
+}
+
+// Fuentes las fuentes se descargan de https://fonts.google.com/
+
+@font-face {
+    font-family: 'primary_font';
+    font-weight: 400;
+    font-display: swap;
+    src: url(../fonts/Roboto/Roboto-Light.ttf);
+}
+
+@font-face {
+    font-family: 'primary_font';
+    font-weight: 500;
+    font-display: swap;
+    src: url(../fonts/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'primary_font';
+    font-weight: 600;
+    font-display: swap;
+    src: url(../fonts/Roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'primary_font';
+    font-weight: 700;
+    font-display: swap;
+    src: url(../fonts/Roboto/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'primary_font';
+    font-weight: 800;
+    font-display: swap;
+    src: url(../fonts/Roboto/Roboto-Black.ttf);
+}

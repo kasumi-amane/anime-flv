@@ -1,16 +1,18 @@
 .footer{
-    position: relative;
+    position: absolute;
+    bottom: 0px;
     height:115px ;
     width:100% ;
-    background-color: #777f82;
-    padding: 20px 15px;
-    margin: 0 30px;
+    background-color:#777f82;
+    padding: 32px 15px;
+    display: flex;
+    justify-content: center;
     &_wrp{
         width: 100%;
-        max-width: 1250px;
+        max-width: 1150px;
         display: flex;
-        flex-direction: row-reverse;
         justify-content: space-between;
+        flex-direction: row-reverse;
         &_right{
             width: 100px;
             height: auto;
@@ -26,14 +28,32 @@
                 height: 40px;
                 fill: white;
                 &:hover{
-                    background-color: black;
+                    background-color:#777f82;
                 }
             }
-            
-            
-            
         }
-
+        &_left{
+            &_top{
+                p{
+                    font-size: 12px;
+                    span{
+                    color: white;
+                    font-size: 14px;  
+                    }
+                }
+            }
+            &_bottom{
+                a{
+                    font-size: 12px;
+                    padding: 8px;
+                    margin: 2px;
+                    font-weight: 600;
+                    text-decoration: none;
+                }
+                
+            }
+        }
+        
     }
 }
 
