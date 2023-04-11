@@ -1,11 +1,13 @@
 .header{
     position:sticky;
-    height: 80px;
+    height: 75px;
     width: 100%;
     display:flex;
     align-items:center;
     justify-content: center;
-    background-color: #3b4248;
+    background-color: #30363b;
+    padding: 0 20px;
+    z-index: 20;
     &_wrp{
         width:100%;
         max-width:1250px;
@@ -23,43 +25,83 @@
             gap:20px;
             a{
                 text-decoration:none;
-                font-weight: 600;
+                font-weight: 700;
                 text-transform: uppercase;
                 color:#a9abad;
-                font-size:18px;
+                font-size:16px;
+                &:hover{
+                    color: white;
+                }
             }
             button{
                 width:90px;
-                height:40px;
+                height:35px;
                 border-radius:4px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                font-size:18px;
+                font-size:12px;
                 color:white;
                 font-weight: 600;
-                background-color: #303439;
+                background-color: #23262a;
+                border: none;
                 cursor: pointer;
+                svg{
+                    width: 30px;
+                    height:20px;
+                    padding-right: 10px;
+                }
                 &:hover{
                     background-color: black;
+                    svg{
+                        rect{
+                            fill: black;
+                        }
+                    }
                 }
             }
             &_facebook{
-                img{
-                    width: 40px;
-                    height: 40px;
-                    border-radius: 20px;
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #0082bc; /* Old browsers */
+background: -moz-linear-gradient(top, #0082bc 0%, #0082bc 50%, #3b5998 51%, #3b5998 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #0082bc 0%,#0082bc 50%,#3b5998 51%,#3b5998 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #0082bc 0%,#0082bc 50%,#3b5998 51%,#3b5998 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+                svg{
+                    width: 15px;
+                    height: 15px;
+                    fill: white;
+                    position: absolute;
                 }
             }
             input{
                 width: 190px;
-                height: 40px;
+                height: 35px;
                 border-radius: 20px;
                 padding: 5px 50px 5px 15px;
-                background-color: #303439;
+                background-color: #23262a;
+                border: none;
+                color: white;
                 &::placeholder{
                     color:#a9abad;
-                    font-size:18px;
+                    font-size:16px;
+                }
+            }
+            &_serch{
+                display: flex;
+                align-items: center;
+                position: relative;
+                border: none;
+                svg{
+                    position: absolute;
+                    right: 15px;
+                    width: 15px;
+                    height: 15px;
+                    fill: white;
                 }
             }
         } 

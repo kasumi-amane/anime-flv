@@ -3,7 +3,7 @@
     bottom: 0px;
     height:115px ;
     width:100% ;
-    background-color:#777f82;
+    background-color: #3a4247;
     padding: 32px 15px;
     display: flex;
     justify-content: center;
@@ -35,20 +35,34 @@
         &_left{
             &_top{
                 p{
+                    text-decoration: none;
+                    font-weight: 500px;
+                    color: white ;
                     font-size: 12px;
+                    margin-bottom: 12px;
                     span{
-                    color: white;
-                    font-size: 14px;  
+                    color: #777f82;
+                    font-size: 14px; 
                     }
                 }
             }
             &_bottom{
+                background-color: #292e32;
+                height: 20px;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-between;
+                text-align: center;
+                padding: 5px 15px;
+                border-radius: 10px;
                 a{
-                    font-size: 12px;
-                    padding: 8px;
-                    margin: 2px;
+                    color: white;
+                    font-size: 13px;
                     font-weight: 600;
                     text-decoration: none;
+                    &:hover{
+                        color: orange;
+                    }
                 }
                 
             }
